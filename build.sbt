@@ -2,7 +2,7 @@ import Versions._
 import Dependencies._
 import ScalacOptions._
 
-val projectName        = "doobie-demo"
+val projectName        = "rockthejvm-doobie-demo"
 val projectDescription = "Doobie Demo by rockthejvm"
 
 ThisBuild / fork                   := true
