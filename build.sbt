@@ -18,7 +18,7 @@ inThisBuild(
     scalacOptions ++= defaultScalacOptions,
     semanticdbEnabled        := true,
     semanticdbVersion        := scalafixSemanticdb.revision,
-    scalafixDependencies ++= Seq("com.github.liancheng" %% "organize-imports" % "0.3.0"),
+    scalafixDependencies ++= Seq("com.github.liancheng" %% "organize-imports" % scalafixOrganizeImportsVersion),
     Test / parallelExecution := false,
     // run 100 tests for each property // -s = -minSuccessfulTests
     Test / testOptions += Tests.Argument(TestFrameworks.ScalaCheck, "-s", "100"),
