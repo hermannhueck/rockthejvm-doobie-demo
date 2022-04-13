@@ -1,5 +1,7 @@
 package demo
 
+import scala.language.implicitConversions
+
 import cats.effect.kernel.{MonadCancelThrow, Resource}
 import cats.effect.{IO, IOApp}
 import doobie.hikari.HikariTransactor
@@ -8,8 +10,6 @@ import doobie.util.transactor.Transactor
 import doobie.util.{ExecutionContexts, Read, Write}
 import hutil.stringformat._
 import io.estatico.newtype.macros.newtype
-
-import scala.language.implicitConversions
 
 object TaglessFinalApp extends IOApp.Simple {
 
